@@ -3,48 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PinPro - AI Pinterest Automation</title>
+    <title>PinPro - AI Pinterest Automation Service</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 40px; background: #f5f5f5; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #e60023; text-align: center; }
-        .logo { text-align: center; margin-bottom: 20px; }
-        p { line-height: 1.6; color: #333; }
-        .features { background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0; }
-        .contact { background: #e60023; color: white; padding: 20px; border-radius: 5px; text-align: center; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: #e60023; color: white; padding: 60px 0; text-align: center; }
+        .header h1 { font-size: 3rem; margin-bottom: 20px; }
+        .header p { font-size: 1.3rem; opacity: 0.9; }
+        .services { padding: 80px 0; background: #f8f9fa; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .service-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
+        .service-card h3 { color: #e60023; margin-bottom: 15px; font-size: 1.5rem; }
+        .pricing { padding: 80px 0; text-align: center; }
+        .price-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 20px; display: inline-block; width: 300px; }
+        .price { font-size: 3rem; color: #e60023; font-weight: bold; }
+        .contact { background: #e60023; color: white; padding: 60px 0; text-align: center; }
+        .btn { background: #fff; color: #e60023; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin: 10px; text-decoration: none; display: inline-block; }
+        .btn:hover { background: #f0f0f0; }
+        .footer { background: #333; color: white; padding: 40px 0; text-align: center; }
+        @media (max-width: 768px) { .header h1 { font-size: 2rem; } .price-card { width: 280px; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
+    <header class="header">
+        <div class="container">
             <h1>🎯 PinPro</h1>
+            <p>Professional Pinterest Marketing & Automation Services</p>
+            <p>Grow Your Pinterest Presence with AI-Powered Content Creation</p>
         </div>
-        
-        <h2>AI-Powered Pinterest Automation Platform</h2>
-        
-        <p>PinPro is an innovative automation platform that helps businesses and content creators maximize their Pinterest marketing potential through AI-powered content creation and intelligent scheduling.</p>
-        
-        <div class="features">
-            <h3>🚀 Key Features:</h3>
-            <ul>
-                <li>Automated pin creation and scheduling</li>
-                <li>AI-generated visual content</li>
-                <li>Performance analytics and optimization</li>
-                <li>Multi-board management</li>
-                <li>Trend analysis and content suggestions</li>
-            </ul>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Our Services</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 50px;">Professional Pinterest marketing solutions for businesses and creators</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>🚀 Pinterest Automation</h3>
+                    <p>Automated pin creation, scheduling, and optimization using advanced AI technology. Scale your Pinterest presence effortlessly.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📊 Analytics & Optimization</h3>
+                    <p>Detailed performance tracking, trend analysis, and data-driven optimization to maximize your Pinterest ROI.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🎨 Content Creation</h3>
+                    <p>Professional pin design, AI-generated visuals, and SEO-optimized descriptions to boost engagement and reach.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📈 Growth Strategy</h3>
+                    <p>Comprehensive Pinterest marketing strategies, board optimization, and audience targeting for sustainable growth.</p>
+                </div>
+            </div>
         </div>
-        
-        <h3>🎯 Perfect For:</h3>
-        <p>• Content creators looking to scale their Pinterest presence<br>
-        • E-commerce businesses wanting to drive more traffic<br>
-        • Marketing agencies managing multiple client accounts<br>
-        • Bloggers and influencers seeking automated growth</p>
-        
-        <div class="contact">
-            <h3>Coming Soon!</h3>
-            <p>PinPro is currently in development. Stay tuned for the launch of the most advanced Pinterest automation platform.</p>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Service Packages</h2>
+            
+            <div class="price-card">
+                <h3>Starter Package</h3>
+                <div class="price">$297</div>
+                <p style="margin: 20px 0;">per month</p>
+                <ul style="text-align: left; margin: 30px 0;">
+                    <li>✅ 30 automated pins/month</li>
+                    <li>✅ Basic analytics report</li>
+                    <li>✅ 3 Pinterest boards setup</li>
+                    <li>✅ Email support</li>
+                </ul>
+                <a href="mailto:contact@pinpro.business" class="btn">Get Started</a>
+            </div>
+            
+            <div class="price-card">
+                <h3>Professional Package</h3>
+                <div class="price">$597</div>
+                <p style="margin: 20px 0;">per month</p>
+                <ul style="text-align: left; margin: 30px 0;">
+                    <li>✅ 100 automated pins/month</li>
+                    <li>✅ Advanced analytics & optimization</li>
+                    <li>✅ 10 Pinterest boards management</li>
+                    <li>✅ Priority support</li>
+                    <li>✅ Custom pin designs</li>
+                </ul>
+                <a href="mailto:contact@pinpro.business" class="btn">Get Started</a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 style="margin-bottom: 30px;">Ready to Grow Your Pinterest?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Contact us today for a free Pinterest audit and custom growth strategy</p>
+            <a href="mailto:contact@pinpro.business" class="btn">Get Free Consultation</a>
+            <a href="tel:+1234567890" class="btn">Call Us Today</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PinPro. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html" style="color: #ccc;">Privacy Policy</a> | 
+                <a href="mailto:contact@pinpro.business" style="color: #ccc;">Contact</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
